@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.card{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.card-body{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading-text{
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 2em;
+  font-weight: 600;
+  font-style: normal;
+}
+.button{
+    padding-top: 100px;
+}
+.custom-button{
+    padding: 10px;
+    width: 200px;
+}
+
+.glow-border {
+    border-radius: 12px;
+    padding: 5px;
+    position: relative;
+    animation: circulateGlow 4s linear infinite;
+}
+
+/* Animation qui fait circuler la lumière autour de l'image */
+@keyframes circulateGlow {
+    0% {
+        box-shadow: 0px -20px 20px 5px #ff0000; /* En haut */
+    }
+    25% {
+        box-shadow: 20px 0px 20px 5px #00ff00; /* À droite */
+    }
+    50% {
+        box-shadow: 0px 20px 20px 5px #0000ff; /* En bas */
+    }
+    75% {
+        box-shadow: -20px 0px 20px 5px #ff00ff; /* À gauche */
+    }
+    100% {
+        box-shadow: 0px -20px 20px 5px #ff0000; /* Retour au point de départ */
+    }
+}
